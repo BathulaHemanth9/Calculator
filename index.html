@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="cal">
+           <form action="">
+            
+             <table align="center" id="table">
+                <tr>
+                    <td>
+                        <h2 align="center" style="color: white;"><b>Calculator</b></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="0" id="screen" name="t1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" value="AC" class="operators" >
+                        <input type="button" onclick="del('')" value="DE" class="operators">
+                        <input type="button" onclick="test('%')" value="%" class="operators">
+                        <input type="button" onclick="test('/')" value="/" class="operators"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="test(7)" value="7" class="btn">
+                        <input type="button" onclick="test(8)" value="8" class="btn">
+                        <input type="button" onclick="test(9)" value="9" class="btn">
+                        <input type="button" onclick="test('*')" value="*" class="operators">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="test(4)" value="4" class="btn">
+                        <input type="button" onclick="test(5)" value="5" class="btn">
+                        <input type="button" onclick="test(6)" value="6" class="btn">
+                        <input type="button" onclick="test('-')" value="-" class="operators">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="test(1)" value="1" class="btn">
+                        <input type="button" onclick="test(2)" value="2" class="btn">
+                        <input type="button" onclick="test(3)" value="3" class="btn">
+                        <input type="button" onclick="test('+')" value="+" class="operators">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="test(0)" value="0" class="btn">
+                        <input type="button" onclick="sqrt('√')" value="^" class="operators">
+                        <input type="button" onclick="test('.')" value="." class="operators">
+                        <input type="button" onclick="equl('=')" value="=" class="operators">
+                    </td>
+                </tr>
+             </table>
+           </form> 
+        </div>
+
+        <script src="script.js"></script>
+    
+    </body>
+</html>
